@@ -1,0 +1,6 @@
+10:45:59 **** Auto Build of project mem_test_bsp ****
+make -k all 
+'Finished building libraries'
+
+10:46:01 Build Finished (took 2s.157ms)
+
