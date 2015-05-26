@@ -25,6 +25,6 @@ levelinfo -pg 1 0 200 520 760 890
 ",
 }
 {
-   da_axi4_cnt: "2",
+   da_axi4_cnt: "1",
    da_ps7_cnt: "1",
 }

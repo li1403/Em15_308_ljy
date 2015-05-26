@@ -77,7 +77,7 @@
 </DIV>
 </A>
 </DIV>
-<DIV class="content_container">This design is targeted forxc7z010board (part number: xc7z010clg400-1)
+<DIV class="content_container">This design is targeted for7z010board (part number: 7z010clg400-1)
 
 <br>
 <H1>Zynq Design Summary</H1>
@@ -87,7 +87,7 @@
 <B>Device</B>
 </TD>
 <TD width=80% BGCOLOR=#E6E6E6>
-xc7z010
+7z010
 </TD>
 </TR>
 <TR valign="top">
@@ -95,7 +95,7 @@ xc7z010
 <B>SpeedGrade</B>
 </TD>
 <TD width=80% BGCOLOR=#E6E6E6>
-xc7z010
+7z010
 </TD>
 </TR>
 <TR valign="top">
@@ -103,7 +103,7 @@ xc7z010
 <B>Part</B>
 </TD>
 <TD width=80% BGCOLOR=#E6E6E6>
-xc7z010clg400-1
+7z010clg400-1
 </TD>
 </TR>
 <TR valign="top">
@@ -1263,13 +1263,13 @@ UART 1
 tx
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-LVCMOS 3.3V
+LVCMOS 1.8V
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 slow
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-enabled
+disabled
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 out
@@ -1286,13 +1286,13 @@ UART 1
 rx
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-LVCMOS 3.3V
+LVCMOS 1.8V
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 slow
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-enabled
+disabled
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 in
@@ -1431,7 +1431,7 @@ Enable DDR Controller of Zynq PS
 <B>Memory Part</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-MT41J128M8 JP-125
+MT41K128M16 JT-125
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 
@@ -1486,7 +1486,7 @@ Select the burst Length. It refers to the amount of data read/written after a re
 <B>Operating Frequency (MHz)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-533.333333
+525.000000
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 Chose the clock period for the desired frequency. The allowed freq range (200 - 667 MHz) is a function of FPGA part and FPGA speed grade
@@ -1508,7 +1508,7 @@ Select the operating temparature
 <B>DRAM IC bus width</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-8 Bits
+16 Bits
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 Provide the width of the DRAM chip
@@ -1519,7 +1519,7 @@ Provide the width of the DRAM chip
 <B>DRAM Device Capacity</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-1024 MBits
+2048 MBits
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 
@@ -1640,7 +1640,7 @@ tRASmin (ns) is the minimum number of clock cycles required between an Active co
 <B>tFAW</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-30.0
+40.0
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 It restricts the number of activates that can be done within a certain window of time
@@ -1695,7 +1695,7 @@ Provide the Additive Latency (ns). Increases the efficiency of the command and d
 <B>DQS to Clock delay [0] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+-0.06
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The daly difference of each DQS path delay subtracted from the clock path delay
@@ -1706,7 +1706,7 @@ The daly difference of each DQS path delay subtracted from the clock path delay
 <B>DQS to Clock delay [1] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+-0.021
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The daly difference of each DQS path delay subtracted from the clock path delay
@@ -1717,7 +1717,7 @@ The daly difference of each DQS path delay subtracted from the clock path delay
 <B>DQS to Clock delay [2] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+-0.017
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The daly difference of each DQS path delay subtracted from the clock path delay
@@ -1728,7 +1728,7 @@ The daly difference of each DQS path delay subtracted from the clock path delay
 <B>DQS to Clock delay [3] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+-0.069
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The daly difference of each DQS path delay subtracted from the clock path delay
@@ -1739,7 +1739,7 @@ The daly difference of each DQS path delay subtracted from the clock path delay
 <B>Board delay [0] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+0.183
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The average of the data midpoint delay, of the data delays associated with a byte lane (DDR_DQ, DDR_DM) averaged with the midpoint of the cloc kdelays (DDR_CK, DR_CK_N)
@@ -1750,7 +1750,7 @@ The average of the data midpoint delay, of the data delays associated with a byt
 <B>Board delay [1] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+0.165
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The average of the data midpoint delay, of the data delays associated with a byte lane (DDR_DQ, DDR_DM) averaged with the midpoint of the cloc kdelays (DDR_CK, DR_CK_N)
@@ -1761,7 +1761,7 @@ The average of the data midpoint delay, of the data delays associated with a byt
 <B>Board delay [2] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+0.168
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The average of the data midpoint delay, of the data delays associated with a byte lane (DDR_DQ, DDR_DM) averaged with the midpoint of the cloc kdelays (DDR_CK, DR_CK_N)
@@ -1772,7 +1772,7 @@ The average of the data midpoint delay, of the data delays associated with a byt
 <B>Board delay [3] (ns)</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-0.0
+0.193
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 The average of the data midpoint delay, of the data delays associated with a byte lane (DDR_DQ, DDR_DM) averaged with the midpoint of the cloc kdelays (DDR_CK, DR_CK_N)
@@ -1780,7 +1780,7 @@ The average of the data midpoint delay, of the data delays associated with a byt
 </TR>
 </TABLE>
 <H2><a name="ClockInfoTab">PS Clocks information</a></H2>
-<H2><a name="ClockInfoTab">PS Reference Clock : 33.333333</a></H2>
+<H2><a name="ClockInfoTab">PS Reference Clock : 50.000000</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=10% BGCOLOR=#E0F8F7>
@@ -1801,7 +1801,7 @@ The average of the data midpoint delay, of the data delays associated with a byt
 ARM PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-666.666687
+650.000000
 </TD>
 </TR>
 <TR valign="top">
@@ -1812,7 +1812,7 @@ ARM PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-100.000000
+50.000000
 </TD>
 </TR>
 <TR valign="top">
@@ -1834,7 +1834,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-50.000000
+150.000000
 </TD>
 </TR>
 <TR valign="top">
@@ -1845,7 +1845,7 @@ IO PLL
 IO PLL
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-50.000000
+100.000000
 </TD>
 </TR>
 <TR valign="top">
@@ -2576,10 +2576,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control</B>
@@ -2616,10 +2616,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>fa</B>
+<B>177</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>fa000</B>
+<B>177000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned with a certain window before syaing locked.</B>
@@ -2639,7 +2639,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>fa220</B>
+<B>1772c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>ARM PLL Configuration</B>
@@ -2724,10 +2724,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>28</B>
+<B>1a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>28000</B>
+<B>1a000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provide the feedback divisor for the PLL. Note: Before changing this value, the PLL must first be bypassed and then put into reset mode. Refer to the Zynq-7000 TRM, UG585, Clocks chapter for CP/RES/CNT values for the PLL.</B>
@@ -2747,7 +2747,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>28000</B>
+<B>1a000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>ARM PLL Control</B>
@@ -3599,10 +3599,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control.</B>
@@ -3639,10 +3639,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>12c</B>
+<B>1db</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>12c000</B>
+<B>1db000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned with a certain window before staying locked.</B>
@@ -3662,7 +3662,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>12c220</B>
+<B>1db2c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR PLL Configuration</B>
@@ -3747,10 +3747,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>15</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20000</B>
+<B>15000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provide the feedback divisor for the PLL. Note: Before changing this value, the PLL must first be bypassed and then put into reset mode. Refer to the Zynq-7000 TRM, UG585, Clocks chapter for CP/RES/CNT values for the PLL.</B>
@@ -3770,7 +3770,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>20000</B>
+<B>15000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR PLL Control</B>
@@ -4562,10 +4562,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>40</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control.</B>
@@ -4602,10 +4602,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>fa</B>
+<B>190</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>fa000</B>
+<B>190000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned with a certain window before staying locked.</B>
@@ -4625,7 +4625,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>fa240</B>
+<B>1902c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>IO PLL Configuration</B>
@@ -4710,10 +4710,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>30</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>30000</B>
+<B>18000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provide the feedback divisor for the PLL. Note: Before changing this value, the PLL must first be bypassed and then put into reset mode. Refer to the Zynq-7000 TRM, UG585, Clocks chapter for CP/RES/CNT values for programming the PLL.</B>
@@ -4733,7 +4733,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>30000</B>
+<B>18000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>IO PLL Control</B>
@@ -5884,10 +5884,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>23</B>
+<B>34</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2300</B>
+<B>3400</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -5904,10 +5904,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>300000</B>
+<B>200000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -5927,7 +5927,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>302301</B>
+<B>203401</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DCI clock control</B>
@@ -6071,10 +6071,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>1800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Divisor for UART Controller source clock.</B>
@@ -6094,7 +6094,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1002</B>
+<B>1802</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>UART Ref Clock Control</B>
@@ -6218,10 +6218,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>8</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -6241,7 +6241,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>801</B>
+<B>601</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PCAP Clock Control</B>
@@ -6345,10 +6345,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>c00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -6388,7 +6388,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>101000</B>
+<B>100c00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 0 Output control</B>
@@ -6492,10 +6492,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -6535,7 +6535,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>100800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 1 Output control</B>
@@ -6639,10 +6639,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>c00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -6682,7 +6682,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>100c00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 2 output control</B>
@@ -6786,10 +6786,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>1800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -6829,7 +6829,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>101800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 3 output control</B>
@@ -8094,50 +8094,6 @@ ctrl_reg4
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Controller 4</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<A href="#ctrl_reg5">
-ctrl_reg5
-</A>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8006078</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>32</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>RW</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0x000000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>Controller register 5</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<A href="#ctrl_reg6">
-ctrl_reg6
-</A>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF800607C</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>32</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>RW</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0x000000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>Controller register 6</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -9655,10 +9611,10 @@ ddrc_ctrl
 <B>fff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>81</B>
+<B>7f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>81</B>
+<B>7f</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tREFI - Average time between refreshes. Unit: in multiples of 32 clocks. DRAM related. Default value is set for DDR3. Dynamic Bit Field.</B>
@@ -9718,7 +9674,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1081</B>
+<B>107f</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Two Rank Configuration</B>
@@ -10263,10 +10219,10 @@ ddrc_ctrl
 <B>3fc0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3b</B>
+<B>54</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>ec0</B>
+<B>1500</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRFC(min) - Minimum time from refresh to refresh or activate (spec: 75nS to 195nS). DRAM Related. Default value is set for DDR3. Dynamic Bit Field.</B>
@@ -10306,7 +10262,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40eda</B>
+<B>4151a</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 0</B>
@@ -10430,10 +10386,10 @@ ddrc_ctrl
 <B>fc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>15</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4000</B>
+<B>5400</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tFAW - At most 4 banks must be activated in a rolling window of tFAW cycles. Unit: clocks. DRAM Related.</B>
@@ -10450,10 +10406,10 @@ ddrc_ctrl
 <B>3f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>24</B>
+<B>23</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>240000</B>
+<B>230000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRAS(max) - Maximum time between activate and precharge to same bank. Maximum time that a page can be kept open (spec is 70 us). If this is zero. The page is closed after each transaction. Unit: Multiples of 1024 clocks DRAM related.</B>
@@ -10513,7 +10469,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>44e440d2</B>
+<B>44e354d2</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 1</B>
@@ -10844,10 +10800,10 @@ ddrc_ctrl
 <B>e0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>80</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRRD - Minimum time between activates from bank A to bank B. (spec: 10ns or less) DRAM RELATED</B>
@@ -11027,7 +10983,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>27087290</B>
+<B>270872d0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 3</B>
@@ -11779,10 +11735,10 @@ ddrc_ctrl
 <B>3ff0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>105</B>
+<B>101</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1050</B>
+<B>1010</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Clock cycles to wait after a DDR software reset before driving CKE high to start the DRAM initialization sequence. Units: 1024 clock cycles. DDR2 Specifications typically require this to be programmed for a delay of >= 200 uS. LPDDR2 - tINIT0 of 20 mS (max) + tINIT1 of 100 nS (min)</B>
@@ -11842,7 +11798,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>11054</B>
+<B>11014</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Burst 8 read/write</B>
@@ -13974,400 +13930,6 @@ ddrc_ctrl
 </TR>
 </TABLE>
 <P>
-<H2><a name="ctrl_reg5">Register (<A href=#mod___slcr> slcr </A>)ctrl_reg5</a></H2>
-<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
-<TR valign="top">
-<TD width=15% BGCOLOR=#FFFF00>
-<B>Register Name</B>
-</TD>
-<TD width=15% BGCOLOR=#FFFF00>
-<B>Address</B>
-</TD>
-<TD width=10% BGCOLOR=#FFFF00>
-<B>Width</B>
-</TD>
-<TD width=10% BGCOLOR=#FFFF00>
-<B>Type</B>
-</TD>
-<TD width=15% BGCOLOR=#FFFF00>
-<B>Reset Value</B>
-</TD>
-<TD width=35% BGCOLOR=#FFFF00>
-<B>Description</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>ctrl_reg5</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8006078</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>32</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>rw</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0x00000000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>--</B>
-</TD>
-</TR>
-</TABLE>
-<P>
-<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
-<TR valign="top">
-<TD width=15% BGCOLOR=#C0FFC0>
-<B>Field Name</B>
-</TD>
-<TD width=15% BGCOLOR=#C0FFC0>
-<B>Bits</B>
-</TD>
-<TD width=10% BGCOLOR=#C0FFC0>
-<B>Mask</B>
-</TD>
-<TD width=10% BGCOLOR=#C0FFC0>
-<B>Value</B>
-</TD>
-<TD width=15% BGCOLOR=#C0FFC0>
-<B>Shifted Value</B>
-</TD>
-<TD width=35% BGCOLOR=#C0FFC0>
-<B>Description</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_dfi_t_ctrl_delay</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>3:0</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>1</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>Specifies the number of DFI clock cycles after an assertion or deassertion of the DFI control signals that the control signals at the PHY-DRAM interface reflect the assertion or de-assertion. If the DFI clock and the memory clock are not phase-aligned, this timing parameter should be rounded up to the next integer value.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_dfi_t_dram_clk_disable</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>7:4</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f0</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>10</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>Specifies the number of DFI clock cycles from the assertion of the ddrc_dfi_dram_clk_disable signal on the DFI until the clock to the DRAM memory devices, at the PHY-DRAM boundary, maintains a low value. If the DFI clock and the memory clock are not phase aligned, this timing parameter should be rounded up to the next integer value.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_dfi_t_dram_clk_enable</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>11:8</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f00</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>100</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>Specifies the number of DFI clock cycles from the de-assertion of the ddrc_dfi_dram_clk_disable signal on the DFI until the first valid rising edge of the clock to the DRAM memory devices at the PHY-DRAM boundary. If the DFI clock and the memory clock are not phase aligned, this timing parameter should be rounded up to the next integer value.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_cksre</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>15:12</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f000</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>6000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time after Self Refresh Entry that CK is maintained as a valid clock. Specifies the clock disable delay after SRE. Recommended settings: LPDDR2: 2 DDR2: 1 DDR3: tCKSRE</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_cksrx</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>19:16</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f0000</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>60000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time before Self Refresh Exit that CK is maintained as a valid clock before issuing SRX. Specifies the clock stable time before SRX. Recommended settings: LPDDR2: 2 DDR2: 1 DDR3: tCKSRX</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_ckesr</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>25:20</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>3f00000</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>400000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>Minimum CKE low width for Self Refresh entry to exit Timing in memory clock cycles. Recommended settings: LPDDR2: tCKESR DDR2: tCKE DDR3: tCKE+1</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#C0C0C0>
-<B>ctrl_reg5@0XF8006078</B>
-</TD>
-<TD width=15% BGCOLOR=#C0C0C0>
-<B>31:0</B>
-</TD>
-<TD width=10% BGCOLOR=#C0C0C0>
-<B>3ffffff</B>
-</TD>
-<TD width=10% BGCOLOR=#C0C0C0>
-<B></B>
-</TD>
-<TD width=15% BGCOLOR=#C0C0C0>
-<B>466111</B>
-</TD>
-<TD width=35% BGCOLOR=#C0C0C0>
-<B>Controller register 5</B>
-</TD>
-</TR>
-</TABLE>
-<P>
-<H2><a name="ctrl_reg6">Register (<A href=#mod___slcr> slcr </A>)ctrl_reg6</a></H2>
-<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
-<TR valign="top">
-<TD width=15% BGCOLOR=#FFFF00>
-<B>Register Name</B>
-</TD>
-<TD width=15% BGCOLOR=#FFFF00>
-<B>Address</B>
-</TD>
-<TD width=10% BGCOLOR=#FFFF00>
-<B>Width</B>
-</TD>
-<TD width=10% BGCOLOR=#FFFF00>
-<B>Type</B>
-</TD>
-<TD width=15% BGCOLOR=#FFFF00>
-<B>Reset Value</B>
-</TD>
-<TD width=35% BGCOLOR=#FFFF00>
-<B>Description</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>ctrl_reg6</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF800607C</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>32</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>rw</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>0x00000000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>--</B>
-</TD>
-</TR>
-</TABLE>
-<P>
-<TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
-<TR valign="top">
-<TD width=15% BGCOLOR=#C0FFC0>
-<B>Field Name</B>
-</TD>
-<TD width=15% BGCOLOR=#C0FFC0>
-<B>Bits</B>
-</TD>
-<TD width=10% BGCOLOR=#C0FFC0>
-<B>Mask</B>
-</TD>
-<TD width=10% BGCOLOR=#C0FFC0>
-<B>Value</B>
-</TD>
-<TD width=15% BGCOLOR=#C0FFC0>
-<B>Shifted Value</B>
-</TD>
-<TD width=35% BGCOLOR=#C0FFC0>
-<B>Description</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_ckpde</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>3:0</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>2</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time after Power Down Entry that CK is maintained as a valid clock. Specifies the clock disable delay after PDE. Recommended setting for LPDDR2: 2.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_ckpdx</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>7:4</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f0</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time before Power Down Exit that CK is maintained as a valid clock before issuing PDX. Specifies the clock stable time before PDX. Recommended setting for LPDDR2: 2.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_ckdpde</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>11:8</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f00</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>200</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time after Deep Power Down Entry that CK is maintained as a valid clock. Specifies the clock disable delay after DPDE. Recommended setting for LPDDR2: 2.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_ckdpdx</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>15:12</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f000</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time before Deep Power Down Exit that CK is maintained as a valid clock before issuing DPDX. Specifies the clock stable time before DPDX. Recommended setting for LPDDR2: 2.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>reg_ddrc_t_ckcsx</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>19:16</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>f0000</B>
-</TD>
-<TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
-</TD>
-<TD width=15% BGCOLOR=#FBF5EF>
-<B>30000</B>
-</TD>
-<TD width=35% BGCOLOR=#FBF5EF>
-<B>This is the time before Clock Stop Exit that CK is maintained as a valid clock before issuing DPDX. Specifies the clock stable time before next command after Clock Stop Exit. Recommended setting for LPDDR2: tXP + 2.</B>
-</TD>
-</TR>
-<TR valign="top">
-<TD width=15% BGCOLOR=#C0C0C0>
-<B>ctrl_reg6@0XF800607C</B>
-</TD>
-<TD width=15% BGCOLOR=#C0C0C0>
-<B>31:0</B>
-</TD>
-<TD width=10% BGCOLOR=#C0C0C0>
-<B>fffff</B>
-</TD>
-<TD width=10% BGCOLOR=#C0C0C0>
-<B></B>
-</TD>
-<TD width=15% BGCOLOR=#C0C0C0>
-<B>32222</B>
-</TD>
-<TD width=35% BGCOLOR=#C0C0C0>
-<B>Controller register 6</B>
-</TD>
-</TR>
-</TABLE>
-<P>
 <H2><a name="CHE_T_ZQ">Register (<A href=#mod___slcr> slcr </A>)CHE_T_ZQ</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
@@ -14631,10 +14193,10 @@ ddrc_ctrl
 <B>fffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>cb73</B>
+<B>c845</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>cb73</B>
+<B>c845</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR2: not used. LPDDR2 and DDR3: Average interval to wait between automatically issuing ZQCS (ZQ calibration short) commands to DDR3 devices. Meaningless if reg_ddrc_dis_auto_zq=1. Units: 1024 Clock cycles.</B>
@@ -14651,10 +14213,10 @@ ddrc_ctrl
 <B>ff00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>69</B>
+<B>67</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>6900000</B>
+<B>6700000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Number of cycles to assert DRAM reset signal during init sequence. Units: 1024 Clock cycles. Applicable for DDR3 only.</B>
@@ -14674,7 +14236,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>690cb73</B>
+<B>670c845</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Misc parameters</B>
@@ -18828,10 +18390,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -18891,7 +18453,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -18975,10 +18537,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19038,7 +18600,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -19122,10 +18684,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19185,7 +18747,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -19269,10 +18831,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when reg_phy_fifo_we_in_force is set to 0.</B>
@@ -19332,7 +18894,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -22502,10 +22064,10 @@ ddrc_ctrl
 <B>ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>a8</B>
+<B>a6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>a8</B>
+<B>a6</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Maximum duration of the auto initialization, tINIT5. Units: 1024 clock cycles. LPDDR2 typically requires 10 us.</B>
@@ -22545,7 +22107,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>12a8</B>
+<B>12a6</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>LPDDR2 Control 3</B>
@@ -27437,10 +26999,10 @@ SLCR_LOCK
 <B>e00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>200</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[IO_Type]</B>
@@ -27457,10 +27019,10 @@ SLCR_LOCK
 <B>1000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[PULLUP]</B>
@@ -27500,7 +27062,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>16e0</B>
+<B>2e0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>MIO Pin 48 Control</B>
@@ -27704,10 +27266,10 @@ SLCR_LOCK
 <B>e00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>200</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[IO_Type]</B>
@@ -27724,10 +27286,10 @@ SLCR_LOCK
 <B>1000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[PULLUP]</B>
@@ -27767,7 +27329,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>16e1</B>
+<B>2e1</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>MIO Pin 49 Control</B>
@@ -29106,10 +28668,10 @@ CTRL
 <B>ffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Baud Rate Clock Divisor Value: 0: Disables baud_sample 1: Clock divisor bypass (baud_sample = sel_clk) 2 - 65535: baud_sample</B>
@@ -29129,7 +28691,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Baud Rate Generator Register.</B>
@@ -31626,10 +31188,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control</B>
@@ -31666,10 +31228,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>fa</B>
+<B>177</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>fa000</B>
+<B>177000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned withth a certain window before syaing locked.</B>
@@ -31689,7 +31251,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>fa220</B>
+<B>1772c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>ARM PLL Configuration</B>
@@ -31774,10 +31336,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>28</B>
+<B>1a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>28000</B>
+<B>1a000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provide the feedback divisor for the PLL. Note: Before changing this value, the PLL must first be bypassed and then put into powerdown or reset state.</B>
@@ -31797,7 +31359,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>28000</B>
+<B>1a000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>ARM PLL Control</B>
@@ -32649,10 +32211,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control.</B>
@@ -32689,10 +32251,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>12c</B>
+<B>1db</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>12c000</B>
+<B>1db000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned withth a certain window before staying locked.</B>
@@ -32712,7 +32274,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>12c220</B>
+<B>1db2c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR PLL Configuration</B>
@@ -32797,10 +32359,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>15</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20000</B>
+<B>15000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provide the feedback divisor for the PLL. Note: Before changing this value, the PLL must first be bypassed and then put into powerdown or reset state.</B>
@@ -32820,7 +32382,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>20000</B>
+<B>15000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR PLL Control</B>
@@ -33612,10 +33174,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>40</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control.</B>
@@ -33652,10 +33214,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>fa</B>
+<B>190</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>fa000</B>
+<B>190000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drive the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned withth a certain window before staying locked.</B>
@@ -33675,7 +33237,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>fa240</B>
+<B>1902c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>IO PLL Configuration</B>
@@ -33760,10 +33322,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>30</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>30000</B>
+<B>18000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provide the feedback divisor for the PLL. Note: Before changing this value, the PLL must first be bypassed and then put into powerdown or reset state.</B>
@@ -33783,7 +33345,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>30000</B>
+<B>18000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>IO PLL Control</B>
@@ -34934,10 +34496,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>23</B>
+<B>34</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2300</B>
+<B>3400</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -34954,10 +34516,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>300000</B>
+<B>200000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -34977,7 +34539,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>302301</B>
+<B>203401</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DCI clock control</B>
@@ -35121,10 +34683,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>1800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Divisor for UART Controller source clock.</B>
@@ -35144,7 +34706,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1002</B>
+<B>1802</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>UART Ref Clock Control</B>
@@ -35268,10 +34830,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>8</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -35291,7 +34853,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>801</B>
+<B>601</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PCAP Clock Control</B>
@@ -35395,10 +34957,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>c00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -35438,7 +35000,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>101000</B>
+<B>100c00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 0 Output control</B>
@@ -35542,10 +35104,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -35585,7 +35147,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>100800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 1 Output control</B>
@@ -35689,10 +35251,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>c00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -35732,7 +35294,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>100c00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 2 output control</B>
@@ -35836,10 +35398,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>1800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider.</B>
@@ -35879,7 +35441,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>101800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PL Clock 3 output control</B>
@@ -38727,10 +38289,10 @@ ddrc_ctrl
 <B>fff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>81</B>
+<B>7f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>81</B>
+<B>7f</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tREFI - Average time between refreshes. Unit: in multiples of 32 clocks. DRAM related. Default value is set for DDR3. Dynamic Bit Field.</B>
@@ -38890,7 +38452,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>81081</B>
+<B>8107f</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Two Rank Configuration</B>
@@ -39435,10 +38997,10 @@ ddrc_ctrl
 <B>3fc0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3b</B>
+<B>54</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>ec0</B>
+<B>1500</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRFC(min) - Minimum time from refresh to refresh or activate (spec: 75nS to 195nS). DRAM Related. Default value is set for DDR3. Dynamic Bit Field.</B>
@@ -39478,7 +39040,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40eda</B>
+<B>4151a</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 0</B>
@@ -39602,10 +39164,10 @@ ddrc_ctrl
 <B>fc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>15</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4000</B>
+<B>5400</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tFAW - At most 4 banks must be activated in a rolling window of tFAW cycles. Unit: clocks. DRAM Related.</B>
@@ -39622,10 +39184,10 @@ ddrc_ctrl
 <B>3f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>24</B>
+<B>23</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>240000</B>
+<B>230000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRAS(max) - Maximum time between activate and precharge to same bank. Maximum time that a page can be kept open (spec is 70 us). If this is zero. The page is closed after each transaction. Unit: Multiples of 1024 clocks DRAM related.</B>
@@ -39685,7 +39247,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>44e440d2</B>
+<B>44e354d2</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 1</B>
@@ -40016,10 +39578,10 @@ ddrc_ctrl
 <B>e0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>80</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRRD - Minimum time between activates from bank A to bank B. (spec: 10ns or less) DRAM RELATED</B>
@@ -40239,7 +39801,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>27287290</B>
+<B>272872d0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters 3</B>
@@ -41011,10 +40573,10 @@ ddrc_ctrl
 <B>3ff0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>105</B>
+<B>101</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1050</B>
+<B>1010</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Clock cycles to wait after a DDR software reset before driving CKE high to start the DRAM initialization sequence. Units: 1024 clock cycles. DDR2 Specifications typically require this to be programmed for a delay of >= 200 uS. LPDDR2 - tINIT0 of 20 mS (max) + tINIT1 of 100 nS (min)</B>
@@ -41074,7 +40636,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>11054</B>
+<B>11014</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Burst 8 read/write</B>
@@ -44270,10 +43832,10 @@ ddrc_ctrl
 <B>fffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>cb73</B>
+<B>c845</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>cb73</B>
+<B>c845</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR2: not used. LPDDR2 and DDR3: Average interval to wait between automatically issuing ZQCS (ZQ calibration short) commands to DDR3 devices. Meaningless if reg_ddrc_dis_auto_zq=1. Units: 1024 Clock cycles.</B>
@@ -44290,10 +43852,10 @@ ddrc_ctrl
 <B>ff00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>69</B>
+<B>67</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>6900000</B>
+<B>6700000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Number of cycles to assert DRAM reset signal during init sequence. Units: 1024 Clock cycles. Applicable for DDR3 only.</B>
@@ -44313,7 +43875,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>690cb73</B>
+<B>670c845</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Misc parameters</B>
@@ -48847,10 +48409,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -48910,7 +48472,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 0.</B>
@@ -48994,10 +48556,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -49057,7 +48619,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 1.</B>
@@ -49141,10 +48703,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -49204,7 +48766,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 2.</B>
@@ -49288,10 +48850,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -49351,7 +48913,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY FIFO write enable configuration for data slice 3.</B>
@@ -52701,10 +52263,10 @@ ddrc_ctrl
 <B>ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>a8</B>
+<B>a6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>a8</B>
+<B>a6</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Maximum duration of the auto initialization, tINIT5. Units: 1024 clock cycles. LPDDR2 typically requires 10 us.</B>
@@ -52744,7 +52306,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>12a8</B>
+<B>12a6</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>LPDDR2 Control 3</B>
@@ -57656,10 +57218,10 @@ SLCR_LOCK
 <B>e00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>200</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[IO_Type]</B>
@@ -57676,10 +57238,10 @@ SLCR_LOCK
 <B>1000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[PULL_UP]</B>
@@ -57719,7 +57281,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>16e0</B>
+<B>2e0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>MIO Pin 48 Control</B>
@@ -57923,10 +57485,10 @@ SLCR_LOCK
 <B>e00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>200</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[IO_Type]</B>
@@ -57943,10 +57505,10 @@ SLCR_LOCK
 <B>1000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Operates the same as MIO_PIN_00[PULL_UP]</B>
@@ -57986,7 +57548,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>16e1</B>
+<B>2e1</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>MIO Pin 49 Control</B>
@@ -59325,10 +58887,10 @@ CTRL
 <B>ffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Baud Rate Clock Divisor Value: 0: Disables baud_sample 1: Clock divisor bypass 2 - 65535: baud_sample value</B>
@@ -59348,7 +58910,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Baud rate divider register.</B>
@@ -61845,10 +61407,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drives the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control</B>
@@ -61885,10 +61447,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>fa</B>
+<B>177</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>fa000</B>
+<B>177000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drives the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned withth a certain window before syaing locked.</B>
@@ -61908,7 +61470,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>fa220</B>
+<B>1772c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>ARM PLL Configuration</B>
@@ -61993,10 +61555,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>28</B>
+<B>1a</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>28000</B>
+<B>1a000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the feedback divisor for the PLL. NOTE: Before changing this value the PLL must first be bypassed and then put into powerdown or reset state.</B>
@@ -62016,7 +61578,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>28000</B>
+<B>1a000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>ARM PLL Control</B>
@@ -62868,10 +62430,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>2</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drives the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control</B>
@@ -62908,10 +62470,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>12c</B>
+<B>1db</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>12c000</B>
+<B>1db000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drives the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned withth a certain window before syaing locked.</B>
@@ -62931,7 +62493,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>12c220</B>
+<B>1db2c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR PLL Configuration</B>
@@ -63016,10 +62578,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>15</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20000</B>
+<B>15000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the feedback divisor for the PLL. NOTE: Before changing this value the PLL must first be bypassed and then put into powerdown or reset state.</B>
@@ -63039,7 +62601,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>20000</B>
+<B>15000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR PLL Control</B>
@@ -63831,10 +63393,10 @@ SLCR_LOCK
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>40</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drives the PLL_RES[3:0] input of the PLL to set the PLL loop filter resistor control</B>
@@ -63871,10 +63433,10 @@ SLCR_LOCK
 <B>3ff000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>fa</B>
+<B>190</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>fa000</B>
+<B>190000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Drives the LOCK_CNT[9:0] input of the PLL to set the number of clock cycles the PLL needs to have clkref and clkfb aligned withth a certain window before syaing locked.</B>
@@ -63894,7 +63456,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>fa240</B>
+<B>1902c0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>IO PLL Configuration</B>
@@ -63979,10 +63541,10 @@ SLCR_LOCK
 <B>7f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>30</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>30000</B>
+<B>18000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the feedback divisor for the PLL. NOTE: Before changing this value the PLL must first be bypassed and then put into powerdown or reset state.</B>
@@ -64002,7 +63564,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>30000</B>
+<B>18000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>IO PLL Control</B>
@@ -65153,10 +64715,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>23</B>
+<B>34</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2300</B>
+<B>3400</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -65173,10 +64735,10 @@ SLCR_LOCK
 <B>3f00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>300000</B>
+<B>200000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. Second cascade divider</B>
@@ -65196,7 +64758,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>302301</B>
+<B>203401</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DCI clock control</B>
@@ -65340,10 +64902,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>1800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -65363,7 +64925,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>1002</B>
+<B>1802</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>UART Reference Clock Control</B>
@@ -65487,10 +65049,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>8</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency.</B>
@@ -65510,7 +65072,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>801</B>
+<B>601</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PCAP 2X Clock Contol</B>
@@ -65614,10 +65176,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>c00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -65657,7 +65219,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>101000</B>
+<B>100c00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 0 Output Clock Control</B>
@@ -65761,10 +65323,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>8</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -65804,7 +65366,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>100800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 1 Output Clock Control</B>
@@ -65908,10 +65470,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>c</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>c00</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -65951,7 +65513,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>100c00</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 2 Output Clock Control</B>
@@ -66055,10 +65617,10 @@ SLCR_LOCK
 <B>3f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>18</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>2000</B>
+<B>1800</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Provides the divisor used to divide the source clock to generate the required generated clock frequency. First cascade divider</B>
@@ -66098,7 +65660,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>102000</B>
+<B>101800</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>FPGA 3 Output Clock Control</B>
@@ -68902,10 +68464,10 @@ ddrc_ctrl
 <B>fff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>81</B>
+<B>7f</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>81</B>
+<B>7f</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tREFI - Average time between refreshes. Unit: in multiples of 32 clocks. DRAM RELATED. Default value is set for DDR3.</B>
@@ -69065,7 +68627,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>81081</B>
+<B>8107f</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Two rank configuration register</B>
@@ -69610,10 +69172,10 @@ ddrc_ctrl
 <B>3fc0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3b</B>
+<B>54</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>ec0</B>
+<B>1500</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRFC(min) - Minimum time from refresh to refresh or activate (spec: 75ns to 195ns). DRAM RELATED. Default value is set for DDR3.</B>
@@ -69653,7 +69215,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40eda</B>
+<B>4151a</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters register 0</B>
@@ -69777,10 +69339,10 @@ ddrc_ctrl
 <B>fc00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>10</B>
+<B>15</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4000</B>
+<B>5400</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tFAW - At most 4 banks must be activated in a rolling window of tFAW cycles. Unit: clocks DRAM RELATED.</B>
@@ -69797,10 +69359,10 @@ ddrc_ctrl
 <B>3f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>24</B>
+<B>23</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>240000</B>
+<B>230000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRAS(max) - Maximum time between activate and precharge to same bank. Maximum time that a page can be kept open (spec: 70 us). If this is zero. The page is closed after each transaction. Unit: Multiples of 1024 clocks DRAM RELATED.</B>
@@ -69860,7 +69422,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>44e440d2</B>
+<B>44e354d2</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters register 1</B>
@@ -70191,10 +69753,10 @@ ddrc_ctrl
 <B>e0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>80</B>
+<B>c0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>tRRD - Minimum time between activates from bank a to bank b. (spec: 10ns or less) DRAM RELATED</B>
@@ -70414,7 +69976,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>27287290</B>
+<B>272872d0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM Parameters register 3</B>
@@ -71186,10 +70748,10 @@ ddrc_ctrl
 <B>3ff0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>105</B>
+<B>101</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1050</B>
+<B>1010</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Cycles to wait after reset before driving CKE high to start the DRAM initialization sequence. Units: 1024 clock cycles. DDR2 Specifications typically require this to be programmed for a delay of >= 200 us. LPDDR2 - tINIT0 of 20 ms (max) + tINIT1 of 100 ns (min)</B>
@@ -71249,7 +70811,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>11054</B>
+<B>11014</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DRAM burst 8 read/write register</B>
@@ -74051,10 +73613,10 @@ ddrc_ctrl
 <B>fffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>cb73</B>
+<B>c845</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>cb73</B>
+<B>c845</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Average interval to wait between automatically issuing ZQCS (ZQ calibration short) commands to DDR3 devices. Meaningless if reg_ddrc_dis_auto_zq=1. Units: 1024 Clock cycles. Applicable for DDR3 and LPDDR2 devices.</B>
@@ -74071,10 +73633,10 @@ ddrc_ctrl
 <B>ff00000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>69</B>
+<B>67</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>6900000</B>
+<B>6700000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Number of cycles to assert DRAM reset signal during init sequence. Units: 1024 Clock cycles. Applicable for DDR3 only.</B>
@@ -74094,7 +73656,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>690cb73</B>
+<B>670c845</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Misc parameters register</B>
@@ -78448,10 +78010,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -78511,7 +78073,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>66</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -78595,10 +78157,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -78658,7 +78220,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>61</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -78742,10 +78304,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -78805,7 +78367,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>62</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -78889,10 +78451,10 @@ ddrc_ctrl
 <B>7ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Ratio value to be used when fifo_we_X_force_mode is set to 0.</B>
@@ -78952,7 +78514,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>35</B>
+<B>68</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY fifo write enable configuration register for data slice 0.</B>
@@ -82302,10 +81864,10 @@ ddrc_ctrl
 <B>ff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>a8</B>
+<B>a6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>a8</B>
+<B>a6</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Maximum duration of the auto initialization, tINIT5. Present only in designs configured to support LPDDR2. Units: 1024 clock cycles. LPDDR2 typically requires 10 us.</B>
@@ -82345,7 +81907,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>12a8</B>
+<B>12a6</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>LPDDR2 Control 3 Register</B>
@@ -87237,10 +86799,10 @@ SLCR_LOCK
 <B>e00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>200</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the IO Type 0= LVTTL 1= LVCMOS18 2= LVCMOS25 3= LVCMOS33 4= HSTL 5-7= LVCMOS33</B>
@@ -87257,10 +86819,10 @@ SLCR_LOCK
 <B>1000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Controls the use of a pull-up for the associated GPIOB 0= Pull-up disabled 1= Pull-up enabled</B>
@@ -87300,7 +86862,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>16e0</B>
+<B>2e0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>MIO Control for Pin 48</B>
@@ -87504,10 +87066,10 @@ SLCR_LOCK
 <B>e00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>3</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>200</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the IO Type 0= LVTTL 1= LVCMOS18 2= LVCMOS25 3= LVCMOS33 4= HSTL 5-7= LVCMOS33</B>
@@ -87524,10 +87086,10 @@ SLCR_LOCK
 <B>1000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>1000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Controls the use of a pull-up for the associated GPIOB 0= Pull-up disabled 1= Pull-up enabled</B>
@@ -87567,7 +87129,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>16e1</B>
+<B>2e1</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>MIO Control for Pin 49</B>
@@ -88906,10 +88468,10 @@ CTRL
 <B>ffff</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Baud Rate Clock Divisor Value 0 = Disables baud_sample 1 = Clock divisor bypass 2 - 65535 = baud_sample value</B>
@@ -88929,7 +88491,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>7c</B>
+<B>3e</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Baud rate divider register</B>
