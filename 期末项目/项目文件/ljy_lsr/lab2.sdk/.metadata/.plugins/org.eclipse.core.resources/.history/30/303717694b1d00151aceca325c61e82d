@@ -1,0 +1,42 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xutil.h"
+
+//====================================================
+
+int main (void)
+{
+
+    XGpio led,push,dip;
+	int i, psb_check,pss_check;
+	volatile int Delay;
+	int dat = 0x01;
+
+    xil_printf("-- Start of the Program --\r\n");
+
+    XGpio_Initialize(&led, XPAR_LED_DEVICE_ID);
+	XGpio_SetDataDirection(&led, 1, 0x00000000);
+
+	XGpio_Initialize(&push, XPAR_BTNS_4BIT_DEVICE_ID);
+	XGpio_SetDataDirection(&push, 1, 0xffffffff);
+
+	//XGpio_Initialize(&dip, XPAR_SW_4BIT_DEVICE_ID);
+	//XGpio_SetDataDirection(&dip, 1, 0xffffffff);
+
+
+	while (1)
+	{
+
+	  psb_check = XGpio_DiscreteRead(&push, 1);
+	  xil_printf("Push Buttons Status %x\r\n", psb_check);
+	  pss_check = XGpio_DiscreteRead(&dip, 1);
+	  xil_printf("Dip Switches Status %x\r\n", pss_check);
+
+	  XGpio_DiscreteWrite(&led, 1,pss_check);
+
+	  for (i=0; i<9999999; i++);
+	}
+
+}
+
+
